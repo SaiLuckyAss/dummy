@@ -5,7 +5,7 @@ git clone "https://${secrets.GIT_TOKEN}@github.com/SaiLuckyAss/hello-world.git" 
 cd hello-world
 git checkout -b dum
 echo "some text" > test.txt
-git add -all
+git add --all
 git commit -m "this is created by ctrl"
 git push -u origin dum
 
