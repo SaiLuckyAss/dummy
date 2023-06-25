@@ -17,3 +17,19 @@ jobs:
         run: |
           ls ${{ github.workspace }}
       - run: echo "🍏 This job's status is ${{ job.status }}."
+      
+  automerge:
+    name: automerge
+    runs-on: ubuntu-latest  
+    steps:
+     - name: automerge
+       uses: pascalgn/automerge-action@v0.13.1
+       env:
+         GITHUB_TOKEN: ${{secrets.GIT_TOKEN}}
+         MERGE_METHOD: "merge"
+         MERGE_LABELS: ""
+         UPDATE_LABELS: "automerge"
+         MERGE_DELETE_BRANCH: "true"
+         MERGE_COMMIT_MESSAGE: "merging onboard"
+        
+        
