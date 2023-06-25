@@ -1,7 +1,7 @@
 
 git config --global user.email "kulaisaikumar0906@gmail.com"
 git config --global user.name "SaiLuckyAss"
-git clone "https://${secrets.GIT_TOKEN}@github.com/SaiLuckyAss/hello-world.git -b master
+git clone "https://${secrets.GIT_TOKEN}@github.com/SaiLuckyAss/hello-world.git" -b master
 cd hello-world
 git checkout -b dum
 echo "some text" > test.txt
