@@ -20,6 +20,7 @@ jobs:
       
   automerge:
     name: automerge
+    needs: [create_workflow]
     runs-on: ubuntu-latest  
     steps:
      - name: automerge
