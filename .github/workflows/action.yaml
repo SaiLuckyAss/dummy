@@ -30,7 +30,7 @@ jobs:
          MERGE_METHOD: "merge"
          MERGE_LABELS: ""
          UPDATE_LABELS: "automerge"
-         MERGE_DELETE_BRANCH: "true"
+         MERGE_DELETE_BRANCH: "false"
          MERGE_COMMIT_MESSAGE: "merging onboard"
  
   create_workflow:
