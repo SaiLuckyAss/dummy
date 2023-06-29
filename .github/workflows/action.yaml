@@ -28,10 +28,10 @@ jobs:
        run: echo "${{env.bool}}"
      - name: TrueSuccess
        run: echo "This will run if bool is true"
-       if: ${{contains(env.bool,"true")}}
+       if: ${{contains(env.bool,'true')}}
      - name: falseSuccess
        run: echo "This will run on false"
-       if: ${{contains(env.bool,"false")}}
+       if: ${{contains(env.bool,'false')}}
        
        
   
