@@ -3,7 +3,7 @@ name: GitHub Actions Demo
 run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
 on: [push]
 env:
-  bool: true
+  bool: false
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
@@ -24,9 +24,15 @@ jobs:
   create_workflow:
     runs-on: ubuntu-latest
     steps:
-     - name: Checking if
-       run: echo "This will run if bool is true ${{env.bool}}"
+     - name: print bool
+       run: echo "${{env.bool}}"
+     - name: TrueSuccess
+       run: echo "This will run if bool is true"
        if: ${{env.bool}}
+     - name: falseSuccess
+       run: echo "This will run on false"
+       if: ${{env.bool}}
+       
        
   
         
