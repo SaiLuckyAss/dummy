@@ -24,6 +24,8 @@ jobs:
   create_workflow:
     runs-on: ubuntu-latest
     steps:
+     - name: checkout
+       uses: actions/checkout@v2
      - name: print bool
        run: echo "${{env.bool}}"
      - name: TrueSuccess
